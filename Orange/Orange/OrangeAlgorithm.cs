@@ -181,12 +181,12 @@ namespace Orange
                 var a = sourcePixels[i + 0];
                 var b = sourcePixels[i + 1];
                 var c = sourcePixels[i + 2];
-                byte maxUseValue = (byte)(255 - infoBase);
+                byte maxUseValue = (byte)(250 - infoBase);
                 if (a.R > maxUseValue || a.G > maxUseValue || a.B > maxUseValue)
                 {
                     continue;
                 }
-                if (b.R < infoBase || b.G < infoBase || b.B < infoBase)
+                if (b.R <3+ infoBase || b.G <3+ infoBase || b.B <3+ infoBase)
                 {
                     i++;
                     continue;
